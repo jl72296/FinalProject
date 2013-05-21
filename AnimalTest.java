@@ -1,7 +1,7 @@
 
 public class AnimalTest {
 
-  public static void main(String[] args) {
+	public static void main(String[] args) {
 		Animal animal = new Animal();
 		Animal bi = new Bi_ped();
 		Animal animalType = new Monkey();
@@ -16,13 +16,19 @@ public class AnimalTest {
 		System.out.println(human.Talk());
 		System.out.println(machine.Talk());
 		
-		/*
+		System.out.println("My animal weight: " + animal.Weight());
+		System.out.println(bi.Weight());
+		
+		System.out.println(animalType.Weight());
+		System.out.println(human.Weight());
+		System.out.println(machine.Weight());
+		
 		System.out.println("Animal's Position: " + animal.Walk());
 		System.out.println(bi.Walk());
 		System.out.println(animalType.Walk());
 		System.out.println(human.Walk());
 		System.out.println(machine.Walk());
-		*/
+
 		
 
 

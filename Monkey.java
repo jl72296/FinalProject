@@ -1,9 +1,10 @@
 
 public class Monkey extends Bi_ped {
-  public void Monkey()
+	public void Monkey()
 	{
 		super.setDialog(2);
 		super.setAnimalSpeed(3);
+		super.setWeight(50);
 	}
 	
 	public String Talk()
@@ -35,6 +36,14 @@ public class Monkey extends Bi_ped {
 		String msg;
 		msg = "My animal is a Monkey ";
 		msg = msg + super.Walk();
+		return msg;
+	}
+	
+	public String Weight()
+	{
+		String msg;
+		msg = "The monkey's weight, ";
+		msg = msg + super.Weight();
 		return msg;
 	}
 

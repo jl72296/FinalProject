@@ -1,9 +1,10 @@
 
 public class Robot extends Bi_ped {
-  public void Robot()
+	public void Robot()
 	{
 		super.setDialog(4);
 		super.setAnimalSpeed(10);
+		super.setWeight(300);
 		
 	}
 	
@@ -36,6 +37,14 @@ public class Robot extends Bi_ped {
 		String msg;
 		msg = "My animal is a Robot ";
 		msg = msg + super.Walk();
+		return msg;
+	}
+	
+	public String Weight()
+	{
+		String msg;
+		msg = "The robot's weight, ";
+		msg = msg + super.Weight();
 		return msg;
 	}
 

@@ -1,9 +1,10 @@
 
 public class Human extends Bi_ped {
-  public void Human()
+	public void Human()
 	{
 		super.setDialog(5);
 		super.setAnimalSpeed(3);
+		super.setWeight(150);
 	}
 	
 	public String Talk()
@@ -35,6 +36,14 @@ public class Human extends Bi_ped {
 		String msg;
 		msg = "My animal is a Human ";
 		msg = msg + super.Walk();
+		return msg;
+	}
+	
+	public String Weight()
+	{
+		String msg;
+		msg = "The human's weight, ";
+		msg = msg + super.Weight();
 		return msg;
 	}
 }

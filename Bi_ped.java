@@ -1,7 +1,7 @@
 
 public class Bi_ped extends Animal{
 
-  public String Talk()
+	public String Talk()
 	{
 		String msg;
 		msg = " a Bi-Ped Animal says, ";
@@ -16,6 +16,14 @@ public class Bi_ped extends Animal{
 			msg = msg + super.Walk();
 			return msg;
 		}
+	
+	public String Weight()
+	{
+		String msg;
+		msg = "a Bi-Ped ";
+		msg = msg + super.Weight();
+		return msg;
+	}
 
 
 }

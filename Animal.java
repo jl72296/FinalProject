@@ -1,5 +1,6 @@
+
 public class Animal {
-  
+	
 	//////////////////////////// Parent Class Animal /////////////////////////////////
 	private int AnimalLine = 1;
 	public int[] x_direction = new int[60];
@@ -7,6 +8,7 @@ public class Animal {
 	private int Horizontal_Position;
 	private int speed;
 	private int MaxSpeed;
+	private int Mass = 170;
 	
 	////////////////////////// Set conditions for type of animal //////////////////////
 	public void setDialog( int speech )
@@ -19,6 +21,11 @@ public class Animal {
 		MaxSpeed = v;
 	}
 	
+	public void setWeight( int m )
+	{
+		Mass = m;
+	}
+	
 	/////////////////////////// Animal Constructor///////////////////////////////////
 	public Animal()
 	{
@@ -27,6 +34,7 @@ public class Animal {
 		speed = 0;
 		MaxSpeed = 5;
 		AnimalLine = 6;
+		Mass = 170;
 	
 	}
 	
@@ -65,6 +73,15 @@ public class Animal {
 		}
 		return "and its position is: " + currentPosition;
 		
+	}
+	
+	public String Weight()
+	{
+		String myAnimalsWeight = "";
+		int mass;
+		mass = 1 + (int)(Math.random()*Mass);
+		myAnimalsWeight = "is " + mass + " lbs";
+		return myAnimalsWeight;
 	}
 
 }
